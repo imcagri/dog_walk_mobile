@@ -122,7 +122,7 @@ class _ManagementPage extends State<ManagementPage> {
               onTapUp: (details) => _sendMessage("c"),
               child: Icon(
                 Icons.upload,
-                color: Colors.green,
+                color: Colors.deepPurple,
                 size: 150.0,
               ),
             ),
@@ -132,7 +132,7 @@ class _ManagementPage extends State<ManagementPage> {
               onTapUp: (details) => _sendMessage("c"),
               child: Icon(
                 Icons.download,
-                color: Colors.green,
+                color: Colors.deepPurple,
                 size: 150.0,
               ),
             ),
@@ -210,7 +210,11 @@ class _ManagementPage extends State<ManagementPage> {
         });
 
         Future.delayed(Duration(milliseconds: 333)).then((_) {
-          listScrollController.animateTo(listScrollController.position.maxScrollExtent, duration: Duration(milliseconds: 333), curve: Curves.easeOut);
+          listScrollController.animateTo(
+              listScrollController.position.maxScrollExtent,
+              duration: Duration(milliseconds: 333),
+              curve: Curves.easeOut
+          );
         });
       } catch (e) {
         // Ignore error, but notify state

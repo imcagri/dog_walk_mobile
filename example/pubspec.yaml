@@ -1,9 +1,6 @@
-name: flutter_bluetooth_serial_example
+name: sugarstore
 version: 0.3.2
-description: Demonstrates how to use the `flutter_bluetooth_serial` plugin.
-authors:
-  - Patryk Ludwikowski <patryk.ludwikowski.7@gmail.com>
-homepage: https://github.com/edufolly/flutter_bluetooth_serial/tree/master/example/
+description: Demonstrates how to use the `kopek kodu bandı` plugin.
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -18,6 +15,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.13.1"
 
   flutter_bluetooth_serial: ^0.4.0
   integration_test:
@@ -25,3 +23,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/pet_logo_24dp.png"
+  min_sdk_android: 21 # android min sdk min:16
