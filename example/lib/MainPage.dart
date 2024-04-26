@@ -88,7 +88,7 @@ class _MainPage extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sugar Store'),
+        title: const Text('Sugar Town'),
       ),
       body: Container(
         child: ListView(
